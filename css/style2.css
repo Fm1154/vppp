@@ -1,0 +1,112 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.column {
+    background: #393939;
+    border: 2px solid #007BFF;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+.column img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.column:hover img {
+    transform: scale(1.1);
+}
+
+.column h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #007BFF;
+    text-shadow: none;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.column ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #eceaea;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.column ul li::before {
+    content: "•";
+    color: #007BFF;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.prev-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(45deg, #007BFF, #6C757D);
+    border: 3px solid #007BFF;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+.prev-button:hover {
+    background: linear-gradient(45deg, #0056b3, #5a6268);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    border-color: #007BFF;
+}
