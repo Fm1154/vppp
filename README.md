@@ -9,4 +9,5 @@ En local:
 5. et c'est tout
 
 En ligne:
-aller sur ce  lien: 
+aller sur ce  lien: https://fhmppp.netlify.app/
+cliquer sur start
